@@ -1,13 +1,13 @@
 <?php
     // On définit un cookie
     $nom_du_cookie = "utilisateur";
-    $valeur_du_cookie = "Fama Mbaye";
+    $valeur_du_cookie = "Mme L'inconnue";
     $date_expiration = time() + (86400 * 30); // Expire au bout de 30 jours
 
     setcookie($nom_du_cookie, $valeur_du_cookie, $date_expiration);
     
     // On modifie ici la valeur du cookie 
-    setcookie($nom_du_cookie, "Samba Diop", $date_expiration);
+    setcookie($nom_du_cookie, $valeur_du_cookie, $date_expiration);
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,8 +1,9 @@
 <?php
 session_start();
 
-$_SESSION["nom"] = "Aly Ba";
-$_SESSION["email"] = "aly.ba@gmail.com";
+$_SESSION["nom"] = "";
+$_SESSION["email"] = "ba@gmail.com";
+$_SESSION["adresse"] = "Pikine";
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +19,7 @@ $_SESSION["email"] = "aly.ba@gmail.com";
         if (isset($_SESSION["nom"])) {
             echo "<p>Votre nom est " . $_SESSION["nom"] . "</p>";
             echo "<p>Votre email est " . $_SESSION["email"] . "</p>";
+            echo "<p>Vous habitez à " . $_SESSION["adresse"] . "</p>";
         }
     ?>
 </body>

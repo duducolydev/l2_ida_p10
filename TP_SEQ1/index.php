@@ -53,7 +53,7 @@ if (isset($_SESSION['user'])) {
                 if (message) {
                     message.style.display = 'none';
                 }
-            }, 3000); 
+            }, 10000); 
             </script>
         <?php endif; ?>
     </body>
