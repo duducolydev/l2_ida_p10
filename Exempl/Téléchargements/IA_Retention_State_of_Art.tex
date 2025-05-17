@@ -1,0 +1,112 @@
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\geometry{margin=2.5cm}
+
+\title{Contribution à l’amélioration de la rétention des apprenants par l’intelligence artificielle : État de l’art}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+L’enseignement supérieur est en pleine mutation, stimulé par la digitalisation qui ouvre l’accès à l’apprentissage à un public plus large et géographiquement dispersé. Les plateformes d’enseignement en ligne sont devenues des instruments essentiels dans cette transformation. Pourtant, l'un des plus grands défis reste la rétention des apprenants : seuls environ 30 \% des étudiants inscrits complètent leur formation en ligne.
+
+Les causes sont multiples : manque de soutien personnalisé, déconnexion entre le parcours choisi et le profil de l'apprenant, engagement faible ou contraintes socio-économiques. Face à ces enjeux, l’intelligence artificielle (IA) émerge comme une solution prometteuse, capable de personnaliser les parcours, de prédire les risques d’abandon et de créer des environnements d’apprentissage plus engageants.
+
+Cet article examine la façon dont l’IA est utilisée pour améliorer la rétention des apprenants, aussi bien dans l’enseignement que dans d’autres secteurs comme le marketing, la finance, les télécommunications et le divertissement. Nous cherchons à répondre à la question suivante : \emph{Comment les solutions d’IA, validées dans d’autres secteurs, peuvent-elles être adaptées à l’enseignement en ligne pour réduire le décrochage scolaire ?}
+
+\section{Méthodologie de la revue}
+Cette revue de littérature adopte une approche comparative multi-sectorielle. Les sources ont été sélectionnées entre 2015 et 2024, en fonction de leur pertinence thématique (rétention, personnalisation, prédiction), de leur contribution technologique (modèles IA avancés) et de leur contexte d’application (académique ou industriel). 
+
+Les travaux sont classés selon trois grandes fonctions de l’IA pour la rétention :
+\begin{itemize}
+  \item La personnalisation adaptative,
+  \item L’optimisation des parcours,
+  \item La prédiction des performances.
+\end{itemize}
+
+Les secteurs analysés sont l’éducation, le marketing, les finances, le divertissement et les télécommunications.
+
+\textbf{Limitations :} La revue reste exploratoire. Peu de travaux font l’objet de validation empirique sur le terrain africain ou dans le contexte spécifique de l’UN-CHK.
+
+\section{Applications de l’IA dans l’enseignement en ligne}
+\subsection{Personnalisation adaptative}
+\begin{itemize}
+  \item \textbf{HMABITS} : Multi-armed bandits pour adapter les séquences d’apprentissage.
+  \item \textbf{ALSAI} : LSTM + NLP pour ajuster les contenus pédagogiques.
+  \item \textbf{SIDDP} : Clustering et régression pour recommander les ressources.
+\end{itemize}
+
+\subsection{Optimisation des parcours}
+\begin{itemize}
+  \item \textbf{Adaptiv'Math} : Combinaison de ZPDES et SACCOM.
+  \item \textbf{SPACe-L} : Ontologies + systèmes multi-agents.
+\end{itemize}
+
+\subsection{Prédiction des performances}
+\begin{itemize}
+  \item \textbf{ECM} : Clustering flou pour segmenter les élèves.
+  \item \textbf{DNN Kalboard360} : Réseaux de neurones pour détecter les échecs.
+\end{itemize}
+
+\section{Leçons issues d'autres secteurs}
+\begin{itemize}
+  \item \textbf{Marketing} : Segmentation client, prédiction de churn.
+  \item \textbf{Finance} : Prédiction de défection, services personnalisés.
+  \item \textbf{Divertissement} : Recommandations vidéo/audio, gamification.
+  \item \textbf{Télécommunications} : Prédiction du churn avec forêts aléatoires et CNN.
+\end{itemize}
+
+\section{Enjeux éthiques et conditions d’implémentation}
+\begin{itemize}
+  \item Respect du RGPD et confidentialité des données
+  \item Risque de biais algorithmiques
+  \item Opacité des modèles IA (black box)
+  \item Nécessité d’un accompagnement humain complémentaire
+\end{itemize}
+
+\section{Perspectives pour l’UN-CHK}
+Une phase expérimentale est envisagée à l’UN-CHK selon le protocole suivant :
+
+\subsection*{Objectifs}
+\begin{itemize}
+  \item Identifier les facteurs prédictifs du décrochage
+  \item Tester l’efficacité des recommandations personnalisées
+  \item Évaluer l’acceptabilité et l’impact pédagogique des solutions IA
+\end{itemize}
+
+\subsection*{Protocole}
+\textbf{Volet 1 – Diagnostic des données existantes} : audit, anonymisation, clustering.
+
+\textbf{Volet 2 – Déploiement des solutions IA} : système de recommandation, chatbot, tableau de bord enseignant.
+
+\textbf{Volet 3 – Évaluation de l’impact} : analyse quantitative + retours qualitatifs + audit éthique.
+
+\subsection*{Résultats attendus}
+Réduction de l’abandon, meilleure motivation, cadre reproductible pour d'autres universités africaines.
+
+\section{Conclusion}
+L’intelligence artificielle représente une opportunité stratégique pour améliorer la rétention dans l’enseignement supérieur à distance. Ce potentiel ne pourra se concrétiser que si les solutions développées sont éthiques, explicables, localement adaptées et pédagogiquement utiles.
+
+\section*{Références}
+\begin{itemize}
+  \item Abdulhafedh, A. (2021). \textit{Incorporating K-means, Hierarchical Clustering and PCA in Customer Segmentation}. Journal of City and Development, 3(1).
+  \item Bouchet, F., & Roy, D. (2021). \textit{L’apport combiné de deux algorithmes d’IA à l’optimisation des parcours}. HAL.
+  \item Clément, B. (2018). \textit{Adaptive Personalization of Pedagogical Sequences using Machine Learning}. Thèse, Université de Bordeaux.
+  \item Kaouni, M., Labouidya, O., & Lakrami, F. (2023). \textit{The Design of An Adaptive E-learning Model}. ResearchGate.
+  \item Mourali, Y. (2022). \textit{Evaluation automatique des contenus éducatifs}. Thèse. Université de Sfax.
+  \item Narayanan, A. (s.d.). \textit{Understanding Social Media Recommendation Algorithms}. Knight Institute.
+  \item Vombatkere, K. et al. (2024). \textit{TikTok and the Art of Personalization}. arXiv.
+  \item Wang, Y. (2022). \textit{Netflix’s Recommendation Systems}. USC Viterbi.
+\end{itemize}
+
+\end{document}

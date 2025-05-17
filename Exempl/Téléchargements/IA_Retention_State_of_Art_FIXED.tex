@@ -1,0 +1,119 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{adjustbox}
+\usepackage{enumitem}
+
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+% Définition des nouveaux types de colonnes
+\newcolumntype{L}[1]{>{\RaggedRight}p{#1}}
+\newcolumntype{C}[1]{>{\Centering}p{#1}}
+\newcolumntype{R}[1]{>{\RaggedLeft}p{#1}}
+
+\title{Contribution à l'amélioration de la rétention des apprenants par l'IA : État de l'art}
+\author{Votre Nom}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	
+	\begin{abstract}
+		L'enseignement supérieur en ligne fait face à un défi majeur : seulement 30\% des apprenants complètent leur formation. Cet article explore comment l'intelligence artificielle (IA) peut améliorer la rétention, en s'appuyant sur une revue comparative des solutions éducatives et intersectorielles (marketing, finance, divertissement). Nous analysons les méthodes existantes, leurs limites, et proposons un protocole expérimental pour l'Université Numérique Cheikh Hamidou Kane (UN-CHK, Sénégal).
+	\end{abstract}
+	
+	\section{Introduction}
+	\label{sec:introduction}
+	
+	L'enseignement supérieur est en pleine mutation, stimulé par la digitalisation qui ouvre l'accès à l'apprentissage à un public plus large et géographiquement dispersé. Les plateformes d'enseignement en ligne sont devenues des instruments essentiels dans cette transformation. Pourtant, l'un des plus grands défis reste la rétention des apprenants : seuls environ 30\% des étudiants inscrits complètent leur formation en ligne.
+	
+	\section{Méthodologie de la revue}
+	\label{sec:methodologie}
+	
+	Cette revue de littérature adopte une approche comparative multi-sectorielle. Les sources ont été sélectionnées entre 2015 et 2024 selon les critères suivants :
+	
+	\begin{itemize}[noitemsep]
+		\item Pertinence thématique (rétention, personnalisation, prédiction)
+		\item Contribution technologique (modèles IA avancés)
+		\item Contexte d'application (académique ou industriel)
+	\end{itemize}
+	
+	\section{Applications de l'IA dans l'enseignement en ligne}
+	\label{sec:applications}
+	
+	\begin{table}[htbp]
+		\centering
+		\caption{Comparatif des solutions IA dans l'éducation en ligne}
+		\label{tab:comparatif_education}
+		\begin{adjustbox}{width=\textwidth}
+			\begin{tabular}{|L{2cm}|L{3cm}|L{2.5cm}|L{2.5cm}|L{2cm}|}
+				\hline
+				\textbf{Solution} & \textbf{Objectif} & \textbf{Méthode principale} & \textbf{Résultats observés} & \textbf{Limites} \\ \hline
+				HMABITS & Personnalisation des séquences d'apprentissage & Multi-armed bandits & Motivation accrue (+20\%) & Complexité de paramétrage \\ \hline
+				ALSAI & Apprentissage adaptatif via NLP & LSTM + Traitement NLP & Réduction des écarts de niveau & Infrastructure coûteuse \\ \hline
+				SIDDP & Recommandation pédagogique & K-means + Régression & Précision de 78\% & Dépend aux données initiales \\ \hline
+				Adaptiv'Math & Optimisation de parcours & ZPDES + SACCOM & Engagement accru & Formation nécessaire \\ \hline
+				SPACe-L & Personnalisation collaborative & Ontologies + SMA & Meilleure synchronisation & Coûts élevés \\ \hline
+			\end{tabular}
+		\end{adjustbox}
+	\end{table}
+	
+	\section{Leçons issues d'autres secteurs}
+	\label{sec:lecons}
+	
+	\begin{table}[htbp]
+		\centering
+		\caption{Synthèse des apports intersectoriels adaptables à l'éducation}
+		\label{tab:synthèse_secteurs}
+		\begin{adjustbox}{width=\textwidth}
+			\begin{tabular}{|L{2cm}|L{3.5cm}|L{3.5cm}|L{2cm}|}
+				\hline
+				\textbf{Secteur} & \textbf{Approches IA utilisées} & \textbf{Adaptabilité à l'éducation} & \textbf{Limites} \\ \hline
+				Marketing & Clustering comportemental, filtrage collaboratif & Recommandation de contenus & Données historiques nécessaires \\ \hline
+				Finance & Prédiction d'attrition, segmentation & Détection des étudiants à risque & Données souvent partielles \\ \hline
+				Divertissement & Algorithmes de recommandation, gamification & Engagement ludique & Risque de distraction \\ \hline
+				Télécoms & Modèles prédictifs de churn & Prévention du décrochage & Interprétation difficile \\ \hline
+			\end{tabular}
+		\end{adjustbox}
+	\end{table}
+	
+	\section{Enjeux éthiques et conditions d'implémentation}
+	\label{sec:enjeux}
+	
+	\begin{itemize}[noitemsep]
+		\item Collecte responsable des données (RGPD)
+		\item Risque de discrimination algorithmique
+		\item Opacité des systèmes (black-box)
+		\item Équilibre entre IA et soutien humain
+	\end{itemize}
+	
+	\section{Perspectives pour l'UN-CHK}
+	\label{sec:perspectives}
+	
+	\subsection{Protocole expérimental}
+	\begin{enumerate}
+		\item \textbf{Diagnostic des données} : Audit des données existantes
+		\item \textbf{Déploiement IA} : Recommandation adaptative + chatbot
+		\item \textbf{Suivi} : Taux de complétion + enquêtes qualitatives
+	\end{enumerate}
+	
+	\section{Conclusion}
+	\label{sec:conclusion}
+	
+	L'IA offre un levier puissant pour améliorer la rétention, à condition de combiner pertinence technique, adaptabilité contextuelle et vigilance éthique. Des travaux empiriques à l'UN-CHK permettront de valider ces pistes en contexte africain.
+	
+	\bibliographystyle{plain}
+	\bibliography{references}
+\end{document}
