@@ -8,9 +8,12 @@
 <body>
     <form action="upload_script.php" method="post" enctype="multipart/form-data">
         <label for="mon_fichier">Choisir un fichier à ajouter</label>
-        <input type="file" name="mon_fichier" id="mon_fichier">
+        <input type="file" name="mon_fichier" id="mon_fichier" required>
 
         <input type="submit" name="" id="">
     </form>
 </body>
 </html>
+<a href="liste_fichiers.php">Téléchargement</a>
+
+
