@@ -1,4 +1,4 @@
 <?php
 
-$userLogin = "Doudou";
+$userLogin = "dudu@unchk.sn";
 $userMdp = "Passer";
